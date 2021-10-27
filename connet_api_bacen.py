@@ -9,5 +9,8 @@ api_key = ""
 url = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.25136/dados?formato=json'
 
 response = requests.get(url)
-
+print(response)
 print(response.json())
+
+dados = pd.read_json(url)
+print(dados)
