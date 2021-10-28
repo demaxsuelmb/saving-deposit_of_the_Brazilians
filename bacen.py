@@ -22,11 +22,9 @@ dados_poupanca = pd.read_json(url_more_30000)
 print (dados_poupanca)
 
 # # Broad national consumer price index - Smoothed trimmed mean Core IPCA	
-
 # start_data  = '01/01/2000'
 # end_data    = '31/12/2021'
 # url_ipca    = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.4466/dados?formato=json&dataInicial='&start_data&'&dataFinal='&end_data
 
 # response = requests.get(url_ipca)
-
 # print(response)
