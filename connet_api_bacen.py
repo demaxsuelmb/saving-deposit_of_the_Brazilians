@@ -26,4 +26,5 @@ end_data    = '31/12/2021'
 url_ipca    = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.4466/dados?formato=json&dataInicial='&start_data&'&dataFinal='&end_data
 
 dados_ipca = pd.read_json(url_ipca)
-print(dados_ipca)
+print(url_500)
+
