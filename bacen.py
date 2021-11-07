@@ -17,14 +17,19 @@ url_25000 = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.25143/dados?formato=js
 url_30000 = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.25144/dados?formato=json'
 url_more_30000 = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.25145/dados?formato=json'
 
-dados_poupanca = pd.read_json(url_more_30000)
 
-print (dados_poupanca)
+# Export data less than 100 to csv
+dados_100 = pd.read_json(url_100)
+dados_100.to_csv('dados_100.csv')
 
-# # Broad national consumer price index - Smoothed trimmed mean Core IPCA	
-# start_data  = '01/01/2000'
-# end_data    = '31/12/2021'
-# url_ipca    = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.4466/dados?formato=json&dataInicial='&start_data&'&dataFinal='&end_data
+# Export data less than 100 to csv
+dados_500 = pd.read_json(url_500)
+dados_500.to_csv('dados_500.csv')
 
-# response = requests.get(url_ipca)
-# print(response)
+
+
+
+
+# # Export data bigger than 3000 to csv 
+# dados_3000 = pd.read_json(url_more_30000)
+# dados_3000.to_csv('dados_3000.csv')
